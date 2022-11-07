@@ -1,5 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,vim,direnv
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,vim,direnv
+images/*
+tutorial/images/*
+.idea/*
 
 ### direnv ###
 .direnv

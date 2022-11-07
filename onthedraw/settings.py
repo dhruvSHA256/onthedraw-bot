@@ -15,6 +15,7 @@ NEWSPIDER_MODULE = "tutorial.spiders"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'tutorial (+http://www.yourdomain.com)'
+USER_AGENT = "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -63,11 +64,11 @@ CONCURRENT_REQUESTS = 250
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'tutorial.pipelines.TutorialPipeline': 300,
-# }
-# ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
-
+ITEM_PIPELINES = {
+    "tutorial.pipelines.OnTheDrawPipeline": 300,
+}
+# ITEM_PIPELINES = {"scrapy.pipelines.images.ImagesPipeline": 300}
+IMAGE_STORE = "images"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 # AUTOTHROTTLE_ENABLED = True
