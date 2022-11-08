@@ -1,4 +1,4 @@
-# Scrapy settings for tutorial project
+# Scrapy settings for onthedraw project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "tutorial"
+BOT_NAME = "onthedraw"
 
-SPIDER_MODULES = ["tutorial.spiders"]
-NEWSPIDER_MODULE = "tutorial.spiders"
+SPIDER_MODULES = ["onthedraw.spiders"]
+NEWSPIDER_MODULE = "onthedraw.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'tutorial (+http://www.yourdomain.com)'
+# USER_AGENT = 'onthedraw (+http://www.yourdomain.com)'
 USER_AGENT = "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
 
 # Obey robots.txt rules
@@ -47,13 +47,13 @@ CONCURRENT_REQUESTS = 250
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'tutorial.middlewares.TutorialSpiderMiddleware': 543,
+#    'onthedraw.middlewares.onthedrawSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'tutorial.middlewares.TutorialDownloaderMiddleware': 543,
+#    'onthedraw.middlewares.onthedrawDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ CONCURRENT_REQUESTS = 250
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "tutorial.pipelines.OnTheDrawPipeline": 300,
+    "onthedraw.pipelines.OnTheDrawPipeline": 300,
 }
 # ITEM_PIPELINES = {"scrapy.pipelines.images.ImagesPipeline": 300}
 IMAGE_STORE = "images"

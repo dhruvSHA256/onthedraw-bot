@@ -9,6 +9,7 @@ IMAGE_DIR = "/home/dhruv/r/scrapy-tutorial/images"
 DELAY = 10
 
 
+# TODO
 async def fetch():
     print("fetching data")
     await asyncio.sleep(DELAY)
